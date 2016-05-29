@@ -1,0 +1,58 @@
+.main-agvantages-block {
+  margin-bottom: 30px;
+}
+
+.advantage {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 6%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .advantage-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .advantage-text {
+    color: #ffffff;
+    background-color: $dark-grey;
+    text-align: center;
+
+    h3 {
+      display: inline-block;
+      position: relative;
+      padding-left: 10px;
+      margin: 10px auto;
+      font-size: 1.5em;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 3px;
+        left: 0;
+        height: 100%;
+        background-color: $main-red;
+      }
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  button {
+    width: 100%;
+  }
+}

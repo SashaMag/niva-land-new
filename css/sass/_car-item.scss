@@ -1,0 +1,41 @@
+.car-item {
+  display: inline-block;
+  @include box-sizing;
+  width: 31%;
+  margin-right: 3%;
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 15px;
+  background-color: $ligth-grey;
+  border: 3px solid $dark-grey;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .item-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h4 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+}

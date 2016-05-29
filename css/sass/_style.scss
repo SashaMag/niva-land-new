@@ -1,0 +1,21 @@
+body {
+  font-family: $font-regular;
+  background-color: #ffffff;
+  font-size: 15px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+button {
+  @include btn;
+}
+
+button.yellow {
+  background-color: $main-yellow;
+  &:hover {
+    background-color: $main-yellow-dark;
+  }
+}

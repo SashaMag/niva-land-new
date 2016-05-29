@@ -1,0 +1,118 @@
+header {
+
+}
+
+.header-logos-block {
+  margin-bottom: 25px;
+}
+
+.header-logos {
+  display: inline-block;
+
+  a {
+    display: inline-block;
+    height: 85px;
+    margin-right: 25px;
+
+    img {
+      height: 85px;
+    }
+  }
+}
+
+.header-phones {
+  float: right;
+
+  a {
+    display: block;
+    font-size: 1.8em;
+    font-family: $font-bold;
+    
+    &:nth-child(1) {
+      color: $main-blue;
+    }
+    &:nth-child(2) {
+      color: $main-red;
+    }
+  }
+
+  span {
+    font-size: 0.6em;
+    text-transform: uppercase;
+  }
+}
+
+.header-nav {
+  background-color: $ligth-grey;
+}
+
+nav {
+
+  ul {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    width: 80%;
+
+    li {
+      display: table-cell;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $font-bold;
+        color: #333;
+        padding: 15px 20px;
+
+        &:hover {
+          background-color: $dark-grey;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
