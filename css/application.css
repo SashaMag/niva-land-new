@@ -349,14 +349,16 @@ nav ul {
 .gl,
 .gls,
 .glc,
-.le {
+.le,
+.leplus {
   display: none; }
   .l.visible,
   .lc.visible,
   .gl.visible,
   .gls.visible,
   .glc.visible,
-  .le.visible {
+  .le.visible,
+  .leplus.visible {
     display: block; }
 
 /*# sourceMappingURL=application.css.map */

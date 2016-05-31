@@ -11,6 +11,7 @@
   var popupHeaderText = document.querySelector('.popup-header .description');
   var popupForm = document.querySelector('.popup-form');
   var popupInfo = document.querySelector('.popup-info');
+  var submitButton = document.getElementById('submit-phone-form');
 
   function hideAllVisibles() {
     var visibleClasses = document.querySelectorAll('.visible');
@@ -22,6 +23,8 @@
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', showPopupWindow);
   }
+
+  submitButton.addEventListener('click', sendUserInfo);
 
   function showPopupWindow() {
 
@@ -69,6 +72,33 @@
     });
 
   });
+
+
+
+  function sendUserInfo() {
+    var mainForm = document.getElementById('main-form');
+    var username = mainForm.getElementById('username');
+    var userphone = mainForm.getElementById('userphone');
+
+    if(userphone.value.length < 3) {
+      alert('Введите номер телефона');
+      return;
+    } // сделать норм проверку
+
+    $.ajax({
+      url: '',
+      type: 'POST',
+      cache: false,
+      data: {
+        name: username.value,
+        phone: userphone.value
+      },
+      success: function(txt) {
+
+        alert('Ваша заявка успешно отправлена')
+      }
+    })
+  }
 
 })();
 
