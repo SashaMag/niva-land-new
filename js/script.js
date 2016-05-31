@@ -37,7 +37,6 @@
       popupHeaderText.innerHTML = this.dataset.description;
 
     } else if (this.dataset.popupType === 'info') {
-      console.log('.niva-' + this.dataset.cartype);
 
       popupInfo.classList.add('visible');
       var visibleBlock = document.querySelector('.' + this.dataset.infoType);
@@ -77,8 +76,10 @@
 
   function sendUserInfo() {
     var mainForm = document.getElementById('main-form');
-    var username = mainForm.getElementById('username');
-    var userphone = mainForm.getElementById('userphone');
+    var username = mainForm.querySelector('#username');
+    var userphone = mainForm.querySelector('#userphone');
+
+    console.log(userphone.value);
 
     if(userphone.value.length < 3) {
       alert('Введите номер телефона');
