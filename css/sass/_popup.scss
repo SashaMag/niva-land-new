@@ -25,6 +25,11 @@
   min-height: 400px;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px #000;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
 
   form {
     padding: 20px;
@@ -54,16 +59,20 @@
   }
 
   .close-cross {
-    display: block;
-    text-decoration: underline;
-    text-align: right !important;
     padding-bottom: 15px;
-    padding-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+  }
 
-    span {
-      cursor: pointer;
-    }
+}
+
+.close-cross {
+  display: block;
+  text-decoration: underline;
+  text-align: right !important;
+  padding-right: 15px;
+
+  span {
+    cursor: pointer;
   }
 }
 
@@ -114,9 +123,52 @@
   font-family: $font-bold;
 }
 
+.popup-info {
+  display: none;
+  text-align: left;
+  max-width: 1000px;
+  @include box-sizing;
+  padding: 30px;
+  background-color: #ffffff;
 
+  pre {
+    font-family: $font-regular;
+    word-wrap: break-word;
+  }
 
+  h3 {
 
+  }
+
+  &.visible {
+    display: block;
+  }
+
+  .innovations,
+  .equipment,
+  .exterior,
+  .construction {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+
+  }
+}
+
+.l,
+.lc,
+.gl,
+.gls,
+.glc,
+.le {
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
 
 
 

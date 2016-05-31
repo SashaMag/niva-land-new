@@ -5,6 +5,7 @@
   <title>Торгмаш Нива</title>
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/application.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -12,7 +13,7 @@
     <div class="header-logos-block container">
       <div class="header-logos">
         <a href=""><img src="img/gm_logo.png"></a>
-        <a href=""><img src="img/tm_logo.jpg"></a>
+        <a href="http://torgmash-avto.ru/"><img src="img/tm_logo.jpg"></a>
         <a href=""><img src="img/Che_logo.png"></a>
       </div>
       <div class="header-phones">
@@ -24,7 +25,7 @@
     <div class="header-nav">
       <nav class="container">
         <ul>
-          <li><a href="">Chevrolet niva</a></li>
+          <li><a href="#">Chevrolet niva</a></li>
           <li><a href="#prices">Цены</a></li>
           <li><a href="#credit">Гос. кредит</a></li>
           <li><a href="#util">Гос. утилизация и обмен</a></li>
@@ -55,7 +56,7 @@
           <div class="main-agvantages-block">
 
             <div class="advantage">
-              <div class="advantage-img"><img src="" alt=""></div>
+              <div class="advantage-img"><img src="img/warranty.png" alt="" class="no-border"></div>
               <div class="advantage-text">
                 <h3>75 000 р.</h3>
                 <span>Гарантированная <br> скидка</span></div>
@@ -67,7 +68,7 @@
             </div>
 
             <div class="advantage">
-              <div class="advantage-img"><img src="" alt=""></div>
+              <div class="advantage-img"><img src="img/niva.jpg" alt=""></div>
               <div class="advantage-text">
                 <h3>25-130 000 р.</h3>
                 <span>Дарим доп. <br> оборудование</span></div>
@@ -79,7 +80,7 @@
             </div>
 
             <div class="advantage">
-              <div class="advantage-img"><img src="" alt=""></div>
+              <div class="advantage-img"><img src="img/service.jpg" alt=""></div>
               <div class="advantage-text">
                 <h3>30 000 р.</h3>
                 <span>Скидка <br>на сервис</span></div>
@@ -91,7 +92,7 @@
             </div>
 
             <div class="advantage">
-              <div class="advantage-img"><img src="" alt=""></div>
+              <div class="advantage-img"><img src="img/goss.png" alt=""  class="no-border"></div>
               <div class="advantage-text">
                 <h3>8,9%</h3>
                 <span>Годовых кредит <br> с гос. поддержкой</span></div>
@@ -132,10 +133,182 @@
                                           <li>Дарим доп. оборудование</li>
                                           <li>Даем скидку на сервис</li>
                                         </ul>">Узнать больше</button>
-              <button class="yellow">Инновации 2016</button>
-              <button class="yellow">Общее оборудование</button>
-              <button class="yellow">Экстерьер</button>
-              <button class="yellow">Конструктивные отличия</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="l"
+                      data-info-type="innovations">Инновации 2016</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="l"
+                      data-info-type="equipment">Общее оборудование</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="l"
+                      data-info-type="exterior">Экстерьер</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="l"
+                      data-info-type="construction">Конструктивные отличия</button>
+            </div>
+
+            <div class="car-item">
+              <div class="item-img"><img src="img/niva.png" alt=""></div>
+              <hr>
+              <h4>«LC» от 572 000 р.</h4>
+              <span>Кредит 9 049 р. в месяц</span>
+              <button class="popup-form-button"
+                      data-popup-type="form"
+                      data-popup-header="in-data"
+                      data-header="На данный автомобиль"
+                      data-description="<ul>
+                                          <li>Гарантируем скидку</li>
+                                          <li>Дарим доп. оборудование</li>
+                                          <li>Даем скидку на сервис</li>
+                                        </ul>">Узнать больше</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="lc"
+                      data-info-type="innovations">Инновации 2016</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="lc"
+                      data-info-type="equipment">Общее оборудование</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="lc"
+                      data-info-type="exterior">Экстерьер</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="lc"
+                      data-info-type="construction">Конструктивные отличия</button>
+            </div>
+
+            <div class="car-item">
+              <div class="item-img"><img src="img/niva.png" alt=""></div>
+              <hr>
+              <h4>«GL» от 651 000 р.</h4>
+              <span>Кредит 9 049 р. в месяц</span>
+              <button class="popup-form-button"
+                      data-popup-type="form"
+                      data-popup-header="in-data"
+                      data-header="На данный автомобиль"
+                      data-description="<ul>
+                                          <li>Гарантируем скидку</li>
+                                          <li>Дарим доп. оборудование</li>
+                                          <li>Даем скидку на сервис</li>
+                                        </ul>">Узнать больше</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gl"
+                      data-info-type="innovations">Инновации 2016</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gl"
+                      data-info-type="equipment">Общее оборудование</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gl"
+                      data-info-type="exterior">Экстерьер</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gl"
+                      data-info-type="construction">Конструктивные отличия</button>
+            </div>
+
+            <div class="car-item">
+              <div class="item-img"><img src="img/niva.png" alt=""></div>
+              <hr>
+              <h4>«GLS» от 685 000 р.</h4>
+              <span>Кредит 9 049 р. в месяц</span>
+              <button class="popup-form-button"
+                      data-popup-type="form"
+                      data-popup-header="in-data"
+                      data-header="На данный автомобиль"
+                      data-description="<ul>
+                                          <li>Гарантируем скидку</li>
+                                          <li>Дарим доп. оборудование</li>
+                                          <li>Даем скидку на сервис</li>
+                                        </ul>">Узнать больше</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gls"
+                      data-info-type="innovations">Инновации 2016</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gls"
+                      data-info-type="equipment">Общее оборудование</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gls"
+                      data-info-type="exterior">Экстерьер</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="gls"
+                      data-info-type="construction">Конструктивные отличия</button>
+            </div>
+
+            <div class="car-item">
+              <div class="item-img"><img src="img/niva.png" alt=""></div>
+              <hr>
+              <h4>«GLC» от 685 000 р.</h4>
+              <span>Кредит 9 049 р. в месяц</span>
+              <button class="popup-form-button"
+                      data-popup-type="form"
+                      data-popup-header="in-data"
+                      data-header="На данный автомобиль"
+                      data-description="<ul>
+                                          <li>Гарантируем скидку</li>
+                                          <li>Дарим доп. оборудование</li>
+                                          <li>Даем скидку на сервис</li>
+                                        </ul>">Узнать больше</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="glc"
+                      data-info-type="innovations">Инновации 2016</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="glc"
+                      data-info-type="equipment">Общее оборудование</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="glc"
+                      data-info-type="exterior">Экстерьер</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="glc"
+                      data-info-type="construction">Конструктивные отличия</button>
+            </div>
+
+            <div class="car-item">
+              <div class="item-img"><img src="img/niva.png" alt=""></div>
+              <hr>
+              <h4>«LE» от 651 000 р.</h4>
+              <span>Кредит 9 049 р. в месяц</span>
+              <button class="popup-form-button"
+                      data-popup-type="form"
+                      data-popup-header="in-data"
+                      data-header="На данный автомобиль"
+                      data-description="<ul>
+                                          <li>Гарантируем скидку</li>
+                                          <li>Дарим доп. оборудование</li>
+                                          <li>Даем скидку на сервис</li>
+                                        </ul>">Узнать больше</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="le"
+                      data-info-type="innovations">Инновации 2016</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="le"
+                      data-info-type="equipment">Общее оборудование</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="le"
+                      data-info-type="exterior">Экстерьер</button>
+              <button class="yellow popup-form-button"
+                      data-popup-type="info"
+                      data-cartype="le"
+                      data-info-type="construction">Конструктивные отличия</button>
             </div>
 
 
@@ -207,47 +380,320 @@
           <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=b3xQk-DAV0Bc4BZ6HeXf2yiO6KoK7ONR&width=100%&height=700&lang=ru_RU&sourceType=constructor"></script>
         </div>
 
-        <div class="b-popup">
-          <div class="b-popup-content">
 
-            <div class="popup-form">
 
-              <div class="popup-header">
-                <div class="text">
-                  <h3>На данный автомобиль</h3>
-                  <div class="description">
-                    <ul>
-                      <li>Гарантируем скидку</li>
-                      <li>Дарим доп. оборудование</li>
-                      <li>Даем скидку на сервис</li>
-                    </ul>
-                  </div>
-                </div>
+      </div>
+    </div>
+
+    <div class="b-popup">
+      <div class="b-popup-content">
+        <div class="popup-form">
+          <div class="popup-header">
+            <div class="text">
+              <h3>На данный автомобиль</h3>
+              <div class="description">
+                <ul>
+                  <li>Гарантируем скидку</li>
+                  <li>Дарим доп. оборудование</li>
+                  <li>Даем скидку на сервис</li>
+                </ul>
               </div>
-
-              <div class="popup-announce">
-                Отправьте заявку прямо сейчас, и наш<br> менеджер  свяжется с вами течение 2х минут
-              </div>
-
-              <form action="">
-
-                <label>Ваше имя</label>
-                <input type="text" placeholder="Имя">
-                <label>Ваш телефон</label>
-                <input type="tel" placeholder="Телефон">
-                <button>Отправить</button>
-              </form>
-              <div class="close-cross">
-                <span>Закрыть</span>
-              </div>
-              <div class="popup-info"></div>
             </div>
+          </div>
+          <div class="popup-announce">
+            Отправьте заявку прямо сейчас, и наш<br> менеджер  свяжется с вами течение 2х минут
+          </div>
+          <form action="">
+            <label>Ваше имя</label>
+            <input type="text" placeholder="Имя">
+            <label>Ваш телефон</label>
+            <input type="tel" placeholder="Телефон">
+            <button>Отправить</button>
+          </form>
+          <div class="close-cross">
+            <span>Закрыть</span>
+          </div>
+        </div>
 
+        <div class="popup-info">
+
+          <div class="innovations">
+              <pre class="l">ТЕХНИЧЕСКИЕ ИННОВАЦИИ ДЛЯ АВТОМОБИЛЕЙ ШЕВРОЛЕ НИВА «L» 2016 г/в
+
+Электронный блок управления двигателем - BOSCH
+Норма токсичности ЕВРО-5, без снижения разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Изотермические стекла</pre>
+           <pre class="lc">ТЕХНИЧЕСКИЕ ИННОВАЦИИ ДЛЯ АВТОМОБИЛЕЙ ШЕВРОЛЕ НИВА «LC» 2016 г/в
+
+Компрессор кондиционера Delphi с переменным объемом значительно увеличивает производительность
+             кондиционера по сравнению с компрессорами постоянного объема
+Электронный блок управления двигателем - BOSCН
+Норма токсичности ЕВРО-5, без снижения разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Изотермические стекла </pre>
+          <pre class="gl">ТЕХНИЧЕСКИЕ ИННОВАОЦИИ ДЛЯ АВТОМОБИЛЕЙ ШЕВРОЛЕ НИВА «GL» 2016 г/в
+
+Компрессор кондиционера Delphi с переменным объемом значительно увеличивает производительность
+            кондиционера по сравнению с компрессорами постоянного объема
+Электронный блок управления двигателем - BOSCН
+Hорма токсичности ЕВРО-5, без снижения разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)</pre>
+<pre class="gls">ТЕХНИЧЕСКИЕ ИННОВАЦИИ ДЛЯ АВТОМОБИЛЕЙ ШЕВРОЛЕ НИВА «GLS» 2016 г/в
+
+Электронный блок управления двигателем - BOSCН Hорма токсичности ЕВРО-5, без снижения
+  разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)</pre>
+<pre class="glc">ТЕХНИЧЕСКИЕ ИННОВАЦИИ ДЛЯ АВТОМОБИЛЕЙ ШЕВРОЛЕ НИВА «GLC» 2016 г/в
+
+Электронный блок управления двигателем - BOSCH Hорма токсичности ЕВРО-5, без снижения
+  разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Обогреваемое лобовое стеклоМагнитола и два передних динамика
+Водительское сидение с поясничным подпором</pre>
+<pre class="le">ТЕХНИЧЕСКИЕ ИННОВАЦИИ ДЛЯ АВТОМОБИЛЕЙ ШЕВРОЛЕ НИВА «LE» 2016 г/в
+
+Электронный блок управления двигателем - BOSCН Hорма токсичности ЕВРО-5, без снижения
+  разгонно-мощностных характеристик двигателя
+Электронная педаль вместо тросового привода - улучшение плавности хода
+Значительное снижение «пульсации» трансмиссии за счет оптимизации работы дроссельной заслонки
+Снижение расхода топлива (2-4% в зависимости от режима эксплуатации)
+Изотермические стекла
+Подголовники заднего ряда сидений</pre>
+          </div>
+
+          <div class="equipment">
+            <h3>Общее оборудование</h3>
+            <pre class="l">
+Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)</pre>
+<pre class="lc">
+ИммобилайзерРулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)</pre>
+<pre class="gl">
+Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF (Германия)
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)
+Бампер передний, задний, молдинги и накладки арок, окрашенные в цвет кузова
+Ручки дверей, окрашенные в цвет кузова</pre>
+<pre class="gls">
+Центральный замок c дистанционным управлением
+Иммобилайзер
+Сигнализация, интегрированная с блоком иммобилайзера
+Электростеклоподъемники передних дверей
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF (Германия)
+Задние складываемые сиденья в пропорции 60/40</pre>
+<pre class="glc">
+Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салона
+Корректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)</pre>
+<pre class="le">
+Иммобилайзер
+Рулевая колонка, регулируемая по высоте
+Гидроусилитель руля ZF Германия
+Задние складываемые сиденья в пропорции 60/40
+Фильтр салонаКорректор света фар
+Подстаканники и секция для мелких предметов
+Передний плафон освещения салона
+Обогрев зоны ног задних пассажиров
+Электростеклоподъемники передних дверей
+Розетка 12V на центральной консоли
+Аудиоподготовка
+Изотермические стекла
+Полноразмерное запасное колесо (аналогичные штатным колесам)</pre>
+</div>
+
+<div class="exterior">
+  <h3>Экстерьер</h3>
+<pre class="l">
+Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, неокрашенные</pre>
+<pre class="lc">
+Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, неокрашенные</pre>
+<pre class="gl">
+Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, окрашенные в цвет кузова</pre>
+<pre class="gls">
+Декоративная накладка «под алюминий» на передней панели со стороны пассажира
+Наружные зеркала заднего вида с электроприводом и подогревом, окрашенные
+Улучшенная отделка салона (искусственная кожа)</pre>
+<pre class="glc">
+Бампер передний, задний, молдинги и накладки арок, окрашенные в цвет кузова
+Хромированная вставка на решетке радиатора
+Ручки дверей, окрашенные в цвет кузова
+Улучшенная отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, окрашенные в цвет кузова
+Декоративная накладка на передней панели со стороны пассажира
+Вставки под «алюминий» на рукоятках коробки передач и раздаточной коробки</pre>
+<pre class="le">
+Базовая отделка салона
+Наружные зеркала заднего вида с электроприводом и подогревом, неокрашенные</pre>
+</div>
+
+          <div class="construction">
+            <h3>Конструктивные отличия</h3>
+            <pre class="l">
+Центральный замок
+Аудиоподготовка: жгуты проводов
+Колеса стальные 15''
+Стальной кронштейн запасного колеса
+Колпак запасного колеса</pre>
+            <pre class="lc">
+Кондиционер
+Центральный замок
+Аудиоподготовка: жгуты проводов
+Колеса стальные 15''
+Стальной кронштейн запасного колеса
+Колпак запасного колеса</pre>
+            <pre class="gl">
+Кондиционер
+Сигнализация, интегрированная с блоком иммобилайзера
+Передние противотуманные фары
+Аудиоподготовка: жгуты проводов
+Колеса легкосплавные 15''
+Алюминиевый кронштейн запасного колеса
+Подушки безопасности водителя и переднего пассажира
+Преднатяжители ремней безопасности водителя и переднего пассажира
+Подголовники задних сидений L-образной формы
+Антиблокировочная система (АБС)
+Система ISOFIX для установки детских удерживающих устройств на заднем сиденье автомобиля</pre>
+            <pre class="gls">
+Очечник
+Задний плафон освещения салона
+Подсветка вещевого ящика
+Съёмная пепельница
+Рукоятки коробки передач и раздаточной коробкой со вставками «под алюминий»
+Подстаканники и секция для мелких предметов
+Подголовники задних сидений Г-образной формы
+Обогрев ног задних пассажиров
+Передние сиденья с подогревом
+Внешняя антенна
+Кабель антенны
+Аудиоподготовка в комплектации внешняя пассивная антенна,
+              колодка подключения четырех акустических систем и евроразъем для питания магнитолы
+              в консоли панели приборов, проводка к акустическим динамикам в передних дверях
+              и в задней полке багажника.
+Рейлинги крыши (нагрузка до 100 кг.)
+Ручки дверей, окрашенные в цвет кузова
+Колеса в сборе (Шины с легкосплавные дисками 16'' с логотипом Chevrolet)
+Изотермические стекла
+Противотуманные фары
+Полноразмерное запасное колесо
+Фильтр салона
+Корректор света фар
+Преднатяжитель ремней безопасности водителя и переднего пассажира
+Система ABS
+2 подушки безопасности (водителя и переднего пассажира)</pre>
+            <pre class="glc">
+Кондиционер
+Сигнализация, интегрированная с блоком иммобилайзера
+Рейлинги крыши (нагрузка до 75 кг)
+Передние противотуманные фары
+Внешняя антенна
+Аудиоподготовка: жгуты проводов
+Магнитола, два передних динамика, антенна
+Обогреваемое ветровое стекло
+Колеса легкосплавные 16'' с логотипом Chevrolet
+Алюминиевый кронштейн запасного колеса
+Задний плафон освещения салона
+Передние сиденья с подогревом
+Водительское сиденье с поясничной поддержкой
+Подушки безопасности водителя и переднего пассажира
+Преднатяжители ремней безопасности водителя и переднего пассажира
+Подголовники задних сидений L-образной формы
+Антиблокировочная система (АБС)
+Система ISOFIX для установки детских удерживающих устройств на заднем сиденье автомобиля</pre>
+            <pre class="le">СПЕЦИАЛЬНЫЙ СОСТАВ ОПЦИЙ КОМПЛЕКТАЦИИ «LE»
+Колеса легкосплавные 16"" черного цвета с шинами специального назначения All-Terrain
+Шноркель для преодоления водных преград
+ТСУ с защитой заднего бампера
+Передняя защита двигателя и КПП
+Передний кронштейн крепления лебедки                                                                                                                                                                                                                                   КОНСТРУКТИВНЫЕ ОТЛИЧИЯ
+Кондиционер
+Сигнализация, интегрированная с блоком иммобилайзера
+Рейлинги крыши (нагрузка до 75 кг)
+Заглушка антенны
+Аудиоподготовка: жгуты проводов
+Колеса легкосплавные 16"" черного цвета с шинами специального назначения All-Terrain
+Алюминиевый кронштейн запасного колеса
+Подголовники задних сидений L-образной формы
+Система ISOFIX для установки детских удерживающих устройств на заднем сиденье автомобиля</pre>
+          </div>
+
+          <!--<div class="equipment">-->
+            <!--<pre class="l"></pre>-->
+            <!--<pre class="lc"></pre>-->
+            <!--<pre class="gl"></pre>-->
+            <!--<pre class="gls"></pre>-->
+            <!--<pre class="glc"></pre>-->
+            <!--<pre class="le"></pre>-->
+          <!--</div>-->
+
+          <div class="close-cross close-cross-2">
+            <span>Закрыть</span>
           </div>
         </div>
 
       </div>
     </div>
+
   </main>
 
   <script src="js/script.js"></script>

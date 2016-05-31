@@ -31,6 +31,9 @@ button.yellow {
   button.yellow:hover {
     background-color: #DDA000; }
 
+.visible {
+  display: block; }
+
 .header-logos-block {
   margin-bottom: 25px; }
 
@@ -79,7 +82,6 @@ nav ul {
         color: #fff; }
 
 .content-page-1 {
-  background-color: #EBEBEB;
   padding-bottom: 30px; }
 .content-page-2 {
   background-color: #ffffff; }
@@ -156,7 +158,15 @@ nav ul {
   .advantage .advantage-img {
     width: 100%; }
     .advantage .advantage-img img {
-      width: 100%; }
+      width: 100%;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid rgba(69, 69, 69, 0.4);
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .advantage .advantage-img .no-border {
+      border: none; }
   .advantage .advantage-text {
     color: #ffffff;
     background-color: #454545;
@@ -238,7 +248,10 @@ nav ul {
   width: 400px;
   min-height: 400px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 10px #000; }
+  box-shadow: 0px 0px 10px #000;
+  display: none; }
+  .popup-form.visible {
+    display: block; }
   .popup-form form {
     padding: 20px; }
   .popup-form label {
@@ -261,14 +274,16 @@ nav ul {
     padding: 15px;
     font-size: 1.5em; }
   .popup-form .close-cross {
-    display: block;
-    text-decoration: underline;
-    text-align: right !important;
     padding-bottom: 15px;
-    padding-right: 15px;
-    margin-bottom: 10px; }
-    .popup-form .close-cross span {
-      cursor: pointer; }
+    margin-bottom: 15px; }
+
+.close-cross {
+  display: block;
+  text-decoration: underline;
+  text-align: right !important;
+  padding-right: 15px; }
+  .close-cross span {
+    cursor: pointer; }
 
 .popup-header .text {
   color: #ffffff;
@@ -303,5 +318,45 @@ nav ul {
 .popup-announce {
   text-align: center;
   font-family: "RobotoBold"; }
+
+.popup-info {
+  display: none;
+  text-align: left;
+  max-width: 1000px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #ffffff; }
+  .popup-info pre {
+    font-family: "RobotoRegular";
+    word-wrap: break-word; }
+  .popup-info.visible {
+    display: block; }
+  .popup-info .innovations,
+  .popup-info .equipment,
+  .popup-info .exterior,
+  .popup-info .construction {
+    display: none; }
+    .popup-info .innovations.visible,
+    .popup-info .equipment.visible,
+    .popup-info .exterior.visible,
+    .popup-info .construction.visible {
+      display: block; }
+
+.l,
+.lc,
+.gl,
+.gls,
+.glc,
+.le {
+  display: none; }
+  .l.visible,
+  .lc.visible,
+  .gl.visible,
+  .gls.visible,
+  .glc.visible,
+  .le.visible {
+    display: block; }
 
 /*# sourceMappingURL=application.css.map */

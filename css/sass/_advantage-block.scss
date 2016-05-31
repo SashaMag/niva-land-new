@@ -17,6 +17,13 @@
 
     img {
       width: 100%;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid $opacity-dark-grey;
+      @include box-sizing;
+    }
+    .no-border {
+      border: none;
     }
   }
 
