@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24d6960-d020-4d05-a887-28485ec49712" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/application.css" afterPath="$PROJECT_DIR$/css/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/application.css.map" afterPath="$PROJECT_DIR$/css/application.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_advantage-block.scss" afterPath="$PROJECT_DIR$/css/sass/_advantage-block.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_content-pages.scss" afterPath="$PROJECT_DIR$/css/sass/_content-pages.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_popup.scss" afterPath="$PROJECT_DIR$/css/sass/_popup.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sass/_style.scss" afterPath="$PROJECT_DIR$/css/sass/_style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <ignored path="niva-land-new.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +29,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4730195">
-                  <caret line="662" column="70" selection-start-line="662" selection-start-column="70" selection-end-line="662" selection-end-column="70" />
+                <state vertical-scroll-proportion="0.44202065">
+                  <caret line="707" column="4" selection-start-line="707" selection-start-column="4" selection-end-line="707" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -215,7 +209,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uaz-tm-land" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -374,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4730195">
-          <caret line="662" column="70" selection-start-line="662" selection-start-column="70" selection-end-line="662" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.44202065">
+          <caret line="707" column="4" selection-start-line="707" selection-start-column="4" selection-end-line="707" selection-end-column="4" />
           <folding />
         </state>
       </provider>
