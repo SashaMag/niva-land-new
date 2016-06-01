@@ -113,6 +113,8 @@ nav ul {
       color: #EBEBEB;
       background-color: rgba(69, 69, 69, 0.4);
       margin-bottom: 15px; }
+      .main-photo-block .main-photo-text .text-block.yellow {
+        background-color: rgba(255, 192, 0, 0.7); }
 
 .main-photo-block.credit .main-photo-image {
   margin-bottom: 10px; }

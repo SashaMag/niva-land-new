@@ -10,6 +10,7 @@ $main-blue: #2D3096;
 $main-red: #b02e34;
 $main-red-dark: #8a090e;
 $main-yellow: #FFC000;
+$opacity-main-yellow: rgba(255, 192, 0, 0.7);
 $main-yellow-dark: #DDA000;
 
 @mixin btn($color: $main-red) {

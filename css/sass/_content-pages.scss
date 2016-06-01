@@ -47,6 +47,9 @@
       color: $ligth-grey;
       background-color: $opacity-dark-grey;
       margin-bottom: 15px;
+      &.yellow {
+        background-color: $opacity-main-yellow;
+      }
     }
   }
 }

@@ -87,7 +87,7 @@
     } // сделать норм проверку
 
     $.ajax({
-      url: '',
+      url: '/files/landing/mailspo.php',
       type: 'POST',
       cache: false,
       data: {
@@ -95,7 +95,6 @@
         phone: userphone.value
       },
       success: function(txt) {
-
         alert('Ваша заявка успешно отправлена')
       }
     })
