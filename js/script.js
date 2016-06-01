@@ -65,7 +65,7 @@
 
     $('a[href^="#"]').click(function(){
       var el = $(this).attr('href');
-      $('body').animate({
+      $('html,body').animate({
         scrollTop: $(el).offset().top}, 500);
       return false;
     });
