@@ -85,7 +85,7 @@
 
     console.log(userphone.value);
 
-    if(userphone.value.length < 6) {
+    if(userphone.value.length <= 6) {
       alert('Введите номер телефона');
       return;
     } // сделать норм проверку
@@ -102,7 +102,14 @@
         num_order: uniq
       },
       success: function(txt) {
-        alert('Ваша заявка успешно отправлена')
+
+        alert('Ваша заявка успешно отправлена');
+
+
+        //clean
+        $(':input').val('');
+
+        hideAllVisibles();
       }
     })
   }
