@@ -66,12 +66,16 @@
     $('a[href^="#"]').click(function(){
       var el = $(this).attr('href');
       $('html,body').animate({
-        scrollTop: $(el).offset().top}, 500);
+        scrollTop: $(el).offset().top}, 800);
       return false;
     });
 
   });
 
+// phone : int, brackets & +
+  $('.numbersOnly').keyup(function () {
+    this.value = this.value.replace(/[^\d\+()\-]/g, '');
+  });
 
 
   function sendUserInfo() {
@@ -81,18 +85,21 @@
 
     console.log(userphone.value);
 
-    if(userphone.value.length < 3) {
+    if(userphone.value.length < 6) {
       alert('Введите номер телефона');
       return;
     } // сделать норм проверку
 
+    var uniq = uniqq();
+
     $.ajax({
-      url: '/files/landing/mailspo.php',
+      url: '/mailspo.php',
       type: 'POST',
       cache: false,
       data: {
         name: username.value,
-        phone: userphone.value
+        phone: userphone.value,
+        num_order: uniq
       },
       success: function(txt) {
         alert('Ваша заявка успешно отправлена')
@@ -101,6 +108,21 @@
   }
 
 })();
+
+
+function uniqq() {
+
+  var result = "";
+
+  $.ajax({
+    url: "/uniq.php",
+    async: false,
+    success: function (data) {
+      result = data;
+    }
+  });
+  return result;
+}
 
 
 
