@@ -7,7 +7,8 @@ body {
   width: 1000px;
   margin: 0 auto; }
 
-button {
+button,
+.button-style {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -23,7 +24,8 @@ button {
   text-transform: uppercase;
   background-color: #b02e34;
   cursor: pointer; }
-  button:hover {
+  button:hover,
+  .button-style:hover {
     background-color: #8a090e; }
 
 button.yellow {
@@ -32,6 +34,9 @@ button.yellow {
     background-color: #DDA000; }
 
 .visible {
+  display: block; }
+
+.button-style {
   display: block; }
 
 .header-logos-block {
@@ -222,7 +227,8 @@ nav ul {
     display: block;
     font-size: 1.2em;
     margin-bottom: 15px; }
-  .car-item button {
+  .car-item button,
+  .car-item .button-style {
     width: 100%;
     margin-bottom: 15px;
     font-size: 13px; }
