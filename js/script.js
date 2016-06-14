@@ -13,6 +13,8 @@
   var popupInfo = document.querySelector('.popup-info');
   var submitButton = document.getElementById('submit-phone-form');
 
+
+
   function hideAllVisibles() {
     var visibleClasses = document.querySelectorAll('.visible');
     for (var i = 0; i < visibleClasses.length; i++) {
@@ -83,7 +85,8 @@
     var username = mainForm.querySelector('#username');
     var userphone = mainForm.querySelector('#userphone');
 
-    console.log(userphone.value);
+    //console.log(userphone.value);
+    //console.log(metricVariable);
 
     if(userphone.value.length <= 6) {
       alert('Введите номер телефона');
@@ -105,6 +108,7 @@
 
         alert('Ваша заявка успешно отправлена');
 
+        yaCounter37745300.reachGoal(metricVariable);
 
         //clean
         $(':input').val('');
@@ -131,6 +135,12 @@ function uniqq() {
   return result;
 }
 
+
+//set metric target
+var metricVariable;
+$('.popup-form-button').click(function () {
+  metricVariable = $(this).attr('data-metric');
+});
 
 
 
