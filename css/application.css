@@ -28,9 +28,9 @@ button,
   .button-style:hover {
     background-color: #8a090e; }
 
-button.yellow {
+.yellow {
   background-color: #FFC000; }
-  button.yellow:hover {
+  .yellow:hover {
     background-color: #DDA000; }
 
 .visible {
@@ -47,6 +47,7 @@ button.yellow {
   .gm-logo .official-dealer {
     position: absolute;
     bottom: -20px;
+    width: 250px;
     text-transform: uppercase;
     font-size: 12px;
     color: #004AB7; }

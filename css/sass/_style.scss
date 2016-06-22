@@ -14,7 +14,7 @@ button,
   @include btn;
 }
 
-button.yellow {
+.yellow {
   background-color: $main-yellow;
   &:hover {
     background-color: $main-yellow-dark;
