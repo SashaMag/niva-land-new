@@ -47,6 +47,7 @@
       color: $ligth-grey;
       background-color: $opacity-dark-grey;
       margin-bottom: 15px;
+
       &.yellow {
         background-color: $opacity-main-yellow;
       }
@@ -89,9 +90,38 @@
 .main-photo-block.util {
   .main-photo-text {
     top: 60%;
+
     .text-block {
       font-size: 1.5em;
     }
+  }
+}
+
+.main-photo-block.service {
+  margin-bottom: -240px;
+  .main-photo-text {
+    top: -280px;
+    left: 0;
+    position: relative;
+    margin-bottom: -300px;
+
+    .text-block {
+      p, ul {
+        font-size: 22px;
+      }
+      padding: 20px;
+      position: relative;
+      font-size: 1.5em;
+      font-family: $font-regular;
+      text-transform: none;
+      background-color: rgba($dark-grey, .7);
+    }
+  }
+
+  .service-sticker {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 
